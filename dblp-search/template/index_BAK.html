@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>dblp</title>
+    {% autoescape off %}
+     <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">  
+   
+</head> 
+
+<body>
+
+<!--=== Content Part ===-->   
+
+<div id="div-container" class="container">
+    <!--Login Block-->
+    <div class="reg-block">
+	
+	<form action="" method="post">
+		{% csrf_token %}
+      
+
+        <div class="input-group margin-bottom-20">
+            <span class="input-group-addon"><i class="fa fa-file"></i></span>
+            <!-- <div class="list-group-item">aadadadd</div> -->
+            <input type="text" class="form-control" name="q" id="q" placeholder="title/author/proceedings">
+        </div>
+        
+            <div class="col-md-12">
+                <button id="btn-query" class="btn-u" type="submit" name="query" data-toggle="tooltip" title="">search</button>   
+		    </div>
+		<br>	
+	 
+	
+        </div>
+
+        <div class='search_result'>
+            {% if  query_result%}
+                    {% for hit in query_result %}
+                            <div class='single_result'>
+                                    <div class='title'>{{hit.title}}</div>
+                                    <div class='snippet'>{{hit.snippet}}</div>
+                                    <a href= {{hit.path}}>link</a>
+                            </div>
+                    {% endfor %}
+            {% endif %}
+        </div>
+		
+
+	</form>
+    </div>
+    <!--End Login Block-->
+</div><!--/container-->
+<!--=== End Content Part ===-->
+
+
+
+</body>
+{% endautoescape%}
+</html> 

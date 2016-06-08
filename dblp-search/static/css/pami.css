@@ -1,0 +1,199 @@
+
+.text-center {
+    text-align: center !important;
+}
+
+.img-rotate img{
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.img-rotate:hover img{
+    -webkit-transform: scale(1.2) rotate(2deg);
+    -moz-transform: scale(1.2) rotate(2deg);
+    -o-transform: scale(1.2) rotate(2deg);
+    -ms-transform: scale(1.2) rotate(2deg);
+    transform: scale(1.2) rotate(2deg);
+}
+
+.video-js { background-color: transparent; }
+
+.timeline_person {
+    padding-top: 15px;
+}
+.timeline_person div {
+    padding: 8px 8px 8px 8px;
+}
+
+.timeline_person p {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.timeline_person .timeline_pname {
+    font-size: 16px;
+}
+
+.timeline_person .timeline_gpname {
+    font-size: 16px;
+}
+
+.timeline_person small {
+    font-size: 70%;
+}
+
+.timeline_person span {
+    font-size: 11px !important;
+    line-height: 24px !important;
+}
+
+.timeline_person i {
+    padding: 3px;
+}
+
+.timeline_person_frame {
+    padding-top: 10px; 
+}
+
+.timeline_person_frame a:hover {
+	text-decoration: none;
+}
+
+.timeline_person_frame a:hover .timeline_person div,
+.timeline_person_frame a:hover .timeline_person div span {
+	background: #e67e22;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;	
+}
+
+.timeline_person_frame a:hover .timeline_person p {
+    color: #fff;
+}
+
+.faculty a {
+    text-decoration:none !important;
+}
+
+.faculty h3 strong {
+    padding-left: 40px;
+}
+.faculty h3 small {
+    padding-left: 40px;
+}
+
+.slide-heading {
+    text-align: center;
+}
+.slide-heading h2 {
+    color: #585f69;
+    top: 40px !important;
+    margin-left: 370px !important;
+    padding: 0 12px !important;
+    font-size: 25px !important;
+    display: inline-block !important;
+    line-height: 34px !important;
+}
+.slide-heading h2:before,
+.slide-heading h2:after {
+    color: #585f69;
+    top: 30px !important;
+}
+
+.slide-research {
+    text-align: center;
+    margin:25px 0 20px;
+    padding-top: 30px !important;
+	width:250px;
+	background: rgba(255,255,255,0.7);
+}
+
+.slide-research-icon {
+    font-size: 60px !important;
+}
+.slide-research-name {
+	text-align: center;
+    color: #585f69;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.slide-research-descri {
+	text-align: center;
+    color: #34383e;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform:none !important;
+}
+
+.slide-orange {
+	background:#e72e22;
+}
+
+.da-slide h2 i {
+    line-height: 60px;
+}
+
+.slide-courses {
+    text-align: left;
+    padding: 15px 20px 0px 20px !important;
+    height: 150px !important;
+    margin-top: 50px;
+    width: 340px !important;
+}
+
+.slide-courses-name {
+    color: #fff !important;
+    margin-top: 0 !important;
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+}
+.slide-courses-place {
+    color: #fff !important;
+    margin-top: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+.slide-services {
+	background: rgba(255,255,255,0.7)!important;
+}
+
+.slide-service {
+    text-align: center !important;
+    padding-left: 120px !important;
+    padding-top: 40px !important;
+
+}
+
+.slide-join-head {
+	text-align:center !important;
+	text-shadow:1px 1px 1px #ffffff;
+	padding-left:150px !important;
+	padding-top: 90px !important;
+}
+
+.slide-join-content {
+	color:#34383e !important;
+	background:rgba(255,255,255,0)!important;
+	font-size:20px !important;
+	text-align:center !important;
+	padding-top: 30px !important;
+	margin-left:-95px !important;
+}
+
+.slide-service-icon {
+    font-size: 60px !important;
+}
+.slide-service-name {
+    color: #34383e !important;
+    font-size: 20px !important;
+    line-height: 0px !important;
+}

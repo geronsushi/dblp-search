@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>C++课程信息查询/录入</title>
+
+     <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/headers/header_icy.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">   
+    <!-- CSS Implementing Plugins -->    
+    <link rel="stylesheet" href="/static/plugins/font-awesome41/css/font-awesome.css">
+    <!-- CSS Page Style -->    
+    <link rel="stylesheet" href="/static/css/pages/login.css">    
+    <!-- CSS Theme -->    
+    <link rel="stylesheet" href="/static/css/theme_orange.css" id="style_color">
+    <link rel="stylesheet" href="/static/css/headers/header-orange.css" id="style_color-header-1">    
+   
+</head> 
+
+<body>
+
+<!--=== Content Part ===-->   
+
+<div id="div-container" class="container">
+    <!--Login Block-->
+    <div class="reg-block">
+	
+	<form action="" method="post">
+		{% csrf_token %}
+      
+
+        <div class="input-group margin-bottom-20">
+            <span class="input-group-addon"><i class="fa fa-file"></i></span>
+            <!-- <div class="list-group-item">aadadadd</div> -->
+            <input type="text" class="form-control" name="q" id="q" placeholder="姓名">
+        </div>
+        
+            <div class="col-md-12">
+                <button id="btn-query" class="btn-u" type="submit" name="query" data-toggle="tooltip" title="请正确输入姓名与学号用于查询信息">查询信息</button>   
+		    </div>
+		<br>	
+	 
+	
+        </div>
+		
+
+	</form>
+    </div>
+    <!--End Login Block-->
+</div><!--/container-->
+<!--=== End Content Part ===-->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="/static/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/static/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/static/plugins/bootstrap/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="/static/plugins/hover-dropdown.min.js"></script> 
+<script type="text/javascript" src="/static/plugins/back-to-top.js"></script>
+<!-- JS Implementing Plugins -->           
+<script type="text/javascript" src="/static/plugins/countdown/jquery.countdown.js"></script>
+<script type="text/javascript" src="/static/plugins/mindfor.shake.js"></script>
+<script type="text/javascript" src="/static/plugins/backstretch/jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+    $.backstretch([
+      "/static/img/default/login_bg.jpg",
+      ], {
+        fade: 1000,
+        duration: 7000
+    });
+</script>
+<!-- JS Page Level -->
+      {% if error %}           
+<script type="text/javascript">
+    $("#div-container").shake();
+</script>
+      {% endif %}
+<!-- JS Page Level -->           
+<script type="text/javascript">
+    $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+    });
+</script>
+<!--[if lt IE 9]>
+    <script src="/static/plugins/respond.js"></script>
+<![endif]-->
+
+</body>
+</html> 
